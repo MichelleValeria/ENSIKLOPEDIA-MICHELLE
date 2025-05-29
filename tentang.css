@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fcfaf6;
+    color: #102E50;
+}
+
+.judul {
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+
+.profil-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.profil-kiri {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.foto-profil {
+    width: 100%;
+    max-width: 240px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.foto-profil:hover {
+    transform: scale(1.02);
+}
+
+.kontak {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.kontak p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.kontak i {
+    color: #F5C45E;
+    font-size: 18px;
+}
+
+.kontak a {
+    color: #102E50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.kontak a:hover {
+    color: #F5C45E;
+}
+
+.profil-kanan {
+    flex: 2 1 500px;
+}
+
+.profil-kanan {
+    position: relative;
+}
+
+.kotak-informasi {
+    background-color: #f8eacd;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.kotak-informasi h2 {
+    color: #ffae00;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.kotak-informasi p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.konten-utama {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.konten-utama h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.konten-utama p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #555;
+}
+
+.feedback-box {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-link {
+    text-decoration: none;
+    color: #fff;
+    background-color: #F5C45E;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.feedback-link:hover {
+    background-color: #c48704;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .profil-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profil-kiri,
+    .profil-kanan,
+    .prorfil-bawah {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .kotak-informasi {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .konten-utama {
+        padding: 20px;
+    }
+
+    .feedback-link {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}

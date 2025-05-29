@@ -1,0 +1,94 @@
+.kehidupan {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.author {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.hanyakrokusumo {
+    width: 100%;
+    text-align: center;
+}
+
+/* Artikel */
+article {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+article img.main-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+article h1 {
+    font-size: 2.0rem;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    color: #14213d;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+
+article p {
+    margin-top: 0px;
+    font-size: 1.1rem;
+    text-align: justify;
+    text-indent: 3em;
+}
+
+/* Bungkus teks agar sejajar dengan gambar */
+article .text-container {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article .text-container {
+        text-align: justify;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+}
+
+.preserve-tab {
+    white-space: pre;
+}
+
+.sultanagunggambar {
+    display: block;
+    margin: 30px auto;
+    /* tengah + beri jarak atas bawah */
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}

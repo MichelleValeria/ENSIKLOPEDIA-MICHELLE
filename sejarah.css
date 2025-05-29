@@ -1,0 +1,156 @@
+body {
+    background: #fcfaf6;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.slider-item {
+    position: relative;
+    display: inline-block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.slider-section h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+
+.slider-section p {
+    text-align: center;
+    color: #1b508c;
+    margin-bottom: 30px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 25px;
+    padding: 10px;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+    /* Chrome */
+}
+
+.slider img {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.4s ease;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.slider img:hover {
+    transform: scale(1.08) translateY(-6px);
+}
+
+.nav {
+    background-color: #ffffff;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.nav:hover {
+    background-color: #eee;
+}
+
+.nav.left {
+    margin-right: 10px;
+}
+
+.nav.right {
+    margin-left: 10px;
+}
+
+.kehidupan {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}
+
+.author {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Artikel */
+article {
+    margin-top: 30px;
+}
+
+article img.main-image {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+article h1 {
+    font-size: 2.0rem;
+}
+
+article h2 {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: #14213d;
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 5px;
+}
+
+article p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+}
